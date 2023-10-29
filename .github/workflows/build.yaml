@@ -39,5 +39,5 @@ jobs:
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
         file: ./Dockerfile
-        build-args: GALASACTL_VERSION=$GALASACTL_VERSION
+        build-args: GALASACTL_VERSION=${{ env.GALASACTL_VERSION }}
 
