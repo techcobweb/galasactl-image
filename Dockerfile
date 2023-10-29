@@ -1,12 +1,14 @@
 # Container image that runs your code
 FROM ubuntu:latest
 
+ARG GALASACTL_VERSION
+
 RUN  apt-get update \
   && apt-get install -y wget \
   && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /app && \
-    wget -P /app https://github.com/galasa-dev/cli/releases/download/v0.30.0/galasactl-linux-x86_64 && \
+    wget -P /app https://github.com/galasa-dev/cli/releases/download/v${GALASACTL_VERSION}/galasactl-linux-x86_64 && \
     mv /app/galasactl-linux-x86_64 /app/galasactl && \
     chmod +x /app/galasactl
 
