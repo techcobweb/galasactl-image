@@ -29,7 +29,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
       with:
-        images: icr.io/galasadev/galasa-cli-amd64@sha256:636834ba9ff62db48c4e1e900e5052ce258aff9ce3c5a751c186c10928af6dc4
+        images: techcobweb/galasactl-base-image
 
     - name: Build and push container image to github repo
       uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
@@ -40,5 +40,4 @@ jobs:
         labels: ${{ steps.meta.outputs.labels }}
         file: ./Dockerfile
         build-args: GALASACTL_VERSION=$GALASACTL_VERSION
-
 
