@@ -8,7 +8,7 @@ RUN  apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /app && \
-    wget -P /app https://github.com/galasa-dev/cli/releases/download/v${GALASACTL_VERSION}/galasactl-linux-x86_64 && \
+    wget -P /app https://github.com/galasa-dev/cli/releases/download/v$GALASACTL_VERSION/galasactl-linux-x86_64 && \
     mv /app/galasactl-linux-x86_64 /app/galasactl && \
     chmod +x /app/galasactl
 
