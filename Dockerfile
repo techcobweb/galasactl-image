@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM ubuntu:latest
+FROM ibm-semeru-runtimes:open-11.0.20.1_1-jdk-jammy
 
 ARG GALASACTL_VERSION 
 
