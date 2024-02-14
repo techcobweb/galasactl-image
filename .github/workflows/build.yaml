@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 env:
-  GALASACTL_VERSION: 0.30.0
+  GALASACTL_VERSION: 0.31.0
 
 jobs:
 
