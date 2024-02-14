@@ -8,12 +8,12 @@ RUN  apt-get update \
 RUN mkdir -p /app 
 
 # Include v0.30.0 of the tool
-RUN wget -q -P /app -O galasactl-v0.30.0 https://github.com/galasa-dev/cli/releases/download/v0.30.0/galasactl-linux-x86_64 &&\
-  chmod +x /app/galasactl-v0.30.0
+RUN wget -q -P /app -O galasactl-0.30.0 https://github.com/galasa-dev/cli/releases/download/v0.30.0/galasactl-linux-x86_64 &&\
+  chmod +x /app/galasactl-0.30.0
 
 # Include v0.31.0 of the tool
 RUN wget -q -P /app -O galasactl-v0.31.0 https://github.com/galasa-dev/cli/releases/download/v0.31.0/galasactl-linux-x86_64 &&\
-  chmod +x /app/galasactl-v0.31.0
+  chmod +x /app/galasactl-0.31.0
 
 COPY entry-point.sh /app
 RUN chmod +x /app/entry-point.sh
