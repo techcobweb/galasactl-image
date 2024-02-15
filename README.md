@@ -1,4 +1,4 @@
 # galasactl-base-image
-Builds a container image for galasactl with a launcher script
+A container packaging of the 'galasactl' command-line tool, used to work with Galasa tests.
 
 [![build](https://github.com/techcobweb/galasactl-image/actions/workflows/build.yaml/badge.svg)](https://github.com/techcobweb/galasactl-image/actions/workflows/build.yaml)
