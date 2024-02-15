@@ -22,5 +22,8 @@ echo "Parameters: $*"
 #     exit 1
 # fi
     
-# Invoke the appropriate version of the tool.
+# Log the version of the galasactl command line
+/galasa/galasactl --version
+
+# Invoke the galasactl command-line.
 /galasa/galasactl $*

@@ -1,15 +1,11 @@
 name: build
 run-name: ${{ github.actor }} 
 on:
-  workflow_dispatch:
   push:
     branches:
       - 'master'
     tags:
       - 'v*'
-  pull_request:
-    branches:
-      - 'master'
 
 env:
   GALASACTL_VERSION: 0.31.0
