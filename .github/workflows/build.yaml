@@ -1,5 +1,6 @@
 name: build
 run-name: ${{ github.actor }} 
+
 on:
   push:
     branches:
@@ -8,7 +9,7 @@ on:
       - 'v*'
 
 env:
-  GALASACTL_VERSION: 0.31.0
+  GALASACTL_VERSION: "0.31.0"
 
 jobs:
 
