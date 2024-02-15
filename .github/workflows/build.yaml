@@ -5,8 +5,8 @@ on:
   push:
     branches:
       - 'master'
-    tags:
-      - 'v*'
+    # tags:
+    #   - 'v*'
 
 env:
   GALASACTL_VERSION: "0.31.0"
